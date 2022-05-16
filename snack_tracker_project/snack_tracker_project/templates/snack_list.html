@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 
-{% block title %}snacl list{% endblock title %}
+{% block title %}snack list{% endblock title %}
 
 {% block content %}
 
-{% for thing in snack_list %}
+{% for snack in snack_list %}
 <p><a href="{% url 'snack_detail' pk=snack.pk %}">{{snack.name}} }</a></p>
 {% endfor %}
 
